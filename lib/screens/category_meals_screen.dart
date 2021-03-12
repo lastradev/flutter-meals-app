@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_meals_app/models/meal.dart';
+
+import '../models/meal.dart';
 import '../widgets/meal_item.dart';
 
 class CategoryMealsScreen extends StatefulWidget {
@@ -49,7 +50,6 @@ class _CategoryMealsScreenState extends State<CategoryMealsScreen> {
             complexity: displayedMeals[index].complexity,
             affordability: displayedMeals[index].affordability,
             duration: displayedMeals[index].duration,
-            removeItem: _removeMeal,
           );
         },
         itemCount: displayedMeals.length,
